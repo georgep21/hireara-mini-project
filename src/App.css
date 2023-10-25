@@ -3,14 +3,16 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  transition: 0.5s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Add new classes for clockwise and counterclockwise rotation */
+.clockwise {
+  animation: App-logo-spin infinite 20s linear;
+}
+
+.counterclockwise {
+  animation: App-logo-spin infinite 20s linear reverse;
 }
 
 .App-header {
